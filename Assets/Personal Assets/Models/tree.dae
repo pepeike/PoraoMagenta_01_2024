@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 4.0.2 commit date:2023-12-05, commit time:07:41, hash:9be62e85b727</authoring_tool>
     </contributor>
-    <created>2024-03-04T23:47:11</created>
-    <modified>2024-03-04T23:47:11</modified>
+    <created>2024-03-06T09:05:10</created>
+    <modified>2024-03-06T09:05:10</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -799,14 +799,14 @@
     </effect>
     <effect id="TreeLeavesBigger2_001-effect">
       <profile_COMMON>
-        <newparam sid="TreeLeavesBigger2_png_001-surface">
+        <newparam sid="MicrosoftTeams-image_png-surface">
           <surface type="2D">
-            <init_from>TreeLeavesBigger2_png_001</init_from>
+            <init_from>MicrosoftTeams-image_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="TreeLeavesBigger2_png_001-sampler">
+        <newparam sid="MicrosoftTeams-image_png-sampler">
           <sampler2D>
-            <source>TreeLeavesBigger2_png_001-surface</source>
+            <source>MicrosoftTeams-image_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -815,7 +815,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="TreeLeavesBigger2_png_001-sampler" texcoord="UVMap"/>
+              <texture texture="MicrosoftTeams-image_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -826,14 +826,14 @@
     </effect>
     <effect id="TreeLeavesBigger2-effect">
       <profile_COMMON>
-        <newparam sid="TreeLeavesBigger2_png-surface">
+        <newparam sid="MicrosoftTeams-image_png-surface">
           <surface type="2D">
-            <init_from>TreeLeavesBigger2_png</init_from>
+            <init_from>MicrosoftTeams-image_png</init_from>
           </surface>
         </newparam>
-        <newparam sid="TreeLeavesBigger2_png-sampler">
+        <newparam sid="MicrosoftTeams-image_png-sampler">
           <sampler2D>
-            <source>TreeLeavesBigger2_png-surface</source>
+            <source>MicrosoftTeams-image_png-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -842,7 +842,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="TreeLeavesBigger2_png-sampler" texcoord="UVMap"/>
+              <texture texture="MicrosoftTeams-image_png-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -913,92 +913,8 @@
     <image id="Material_Base_Color" name="Material_Base_Color">
       <init_from>Material%20Base%20Color.png</init_from>
     </image>
-    <image id="TreeLeavesBigger2_png" name="TreeLeavesBigger2_png">
-      <init_from>TreeLeavesBigger2.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_001" name="TreeLeavesBigger2_png_001">
-      <init_from>TreeLeavesBigger2.png.001.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_002" name="TreeLeavesBigger2_png_002">
-      <init_from>TreeLeavesBigger2.png.002.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_003" name="TreeLeavesBigger2_png_003">
-      <init_from>TreeLeavesBigger2.png.003.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_004" name="TreeLeavesBigger2_png_004">
-      <init_from>TreeLeavesBigger2.png.004.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_005" name="TreeLeavesBigger2_png_005">
-      <init_from>TreeLeavesBigger2.png.005.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_006" name="TreeLeavesBigger2_png_006">
-      <init_from>TreeLeavesBigger2.png.006.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_007" name="TreeLeavesBigger2_png_007">
-      <init_from>TreeLeavesBigger2.png.007.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_008" name="TreeLeavesBigger2_png_008">
-      <init_from>TreeLeavesBigger2.png.008.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_009" name="TreeLeavesBigger2_png_009">
-      <init_from>TreeLeavesBigger2.png.009.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_010" name="TreeLeavesBigger2_png_010">
-      <init_from>TreeLeavesBigger2.png.010.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_011" name="TreeLeavesBigger2_png_011">
-      <init_from>TreeLeavesBigger2.png.011.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_012" name="TreeLeavesBigger2_png_012">
-      <init_from>TreeLeavesBigger2.png.012.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_013" name="TreeLeavesBigger2_png_013">
-      <init_from>TreeLeavesBigger2.png.013.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_014" name="TreeLeavesBigger2_png_014">
-      <init_from>TreeLeavesBigger2.png.014.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_015" name="TreeLeavesBigger2_png_015">
-      <init_from>TreeLeavesBigger2.png.015.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_016" name="TreeLeavesBigger2_png_016">
-      <init_from>TreeLeavesBigger2.png.016.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_017" name="TreeLeavesBigger2_png_017">
-      <init_from>TreeLeavesBigger2.png.017.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_018" name="TreeLeavesBigger2_png_018">
-      <init_from>TreeLeavesBigger2.png.018.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_019" name="TreeLeavesBigger2_png_019">
-      <init_from>TreeLeavesBigger2.png.019.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_020" name="TreeLeavesBigger2_png_020">
-      <init_from>TreeLeavesBigger2.png.020.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_021" name="TreeLeavesBigger2_png_021">
-      <init_from>TreeLeavesBigger2.png.021.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_022" name="TreeLeavesBigger2_png_022">
-      <init_from>TreeLeavesBigger2.png.022.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_023" name="TreeLeavesBigger2_png_023">
-      <init_from>TreeLeavesBigger2.png.023.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_024" name="TreeLeavesBigger2_png_024">
-      <init_from>TreeLeavesBigger2.png.024.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_025" name="TreeLeavesBigger2_png_025">
-      <init_from>TreeLeavesBigger2.png.025.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_026" name="TreeLeavesBigger2_png_026">
-      <init_from>TreeLeavesBigger2.png.026.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_027" name="TreeLeavesBigger2_png_027">
-      <init_from>TreeLeavesBigger2.png.027.png</init_from>
-    </image>
-    <image id="TreeLeavesBigger2_png_028" name="TreeLeavesBigger2_png_028">
-      <init_from>TreeLeavesBigger2.png.028.png</init_from>
+    <image id="MicrosoftTeams-image_png" name="MicrosoftTeams-image_png">
+      <init_from>MicrosoftTeams-image.png</init_from>
     </image>
   </library_images>
   <library_materials>

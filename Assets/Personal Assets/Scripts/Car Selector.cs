@@ -10,6 +10,7 @@ public class CarSelector : MonoBehaviour
     public static GameObject currentCar;
     public GameObject carousel;
     public string SceneName;
+    public AudioSource beep;
     // Start is called before the first frame update
     public void Update()
     {
@@ -20,16 +21,17 @@ public class CarSelector : MonoBehaviour
         //check if the player presses the right or left arrow
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
-            RightButton();
+            LeftButton();
         }
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            LeftButton();
+            RightButton();
         }
     }
     //get the right event button
     public void RightButton()
     {
+        beep.Play();
         //get the current car
         currentCar = carList[selectedCar];
         //move the carousel to the right
@@ -43,6 +45,7 @@ public class CarSelector : MonoBehaviour
     }
     public void LeftButton()
     {
+        beep.Play();
         currentCar = carList[selectedCar];  
         selectedCar--;
         if(selectedCar < 0)

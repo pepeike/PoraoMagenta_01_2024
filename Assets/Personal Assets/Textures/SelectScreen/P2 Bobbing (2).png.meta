@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8acdff83b5c4894da40e49703852480
+guid: 46ec4aa142714ad4f821d4a0b59a4102
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: P4 Bobbing_0
+      name: P2 Bobbing (2)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 400b17d89ec39c34382e6be9d84b7273
-      internalID: -1592639617
+      spriteID: ace7d6c21375c1148888142e57365cc7
+      internalID: -1481645914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_1
+      name: P2 Bobbing (2)_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08d891f5f932e664f989f09135d6dd1d
-      internalID: 1529884751
+      spriteID: 10130d240da36984b8fd6d57821f5c24
+      internalID: -220937694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_2
+      name: P2 Bobbing (2)_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262ea7a1823d63f4bad1b79c2e41989a
-      internalID: 748949359
+      spriteID: b798369d0bc02cb40a6322a31816eef4
+      internalID: 1550273926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_3
+      name: P2 Bobbing (2)_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1032a9603617ffc408a227afbf743a43
-      internalID: -2063142043
+      spriteID: 5449aeb8d3c87894e9436a6380fdded0
+      internalID: 802925922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_4
+      name: P2 Bobbing (2)_4
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c073469f1ffdde74aaec9b35e24486c3
-      internalID: -937500183
+      spriteID: 39444aaa74c196c4d9c64aa7ab67f21b
+      internalID: 837596851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_5
+      name: P2 Bobbing (2)_5
       rect:
         serializedVersion: 2
         x: 32
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb0b157eca200074ca0d7c4e45f01e99
-      internalID: 1387703179
+      spriteID: e3a4e8f97c338db4d9b6d6409f97a3d3
+      internalID: -1823658423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_6
+      name: P2 Bobbing (2)_6
       rect:
         serializedVersion: 2
         x: 64
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 966356238cab3534dadeba86c4feaa93
-      internalID: 1335645704
+      spriteID: 68671d9377bb1b54d91b6b4a98918962
+      internalID: 707271313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_7
+      name: P2 Bobbing (2)_7
       rect:
         serializedVersion: 2
         x: 96
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa2d9745ad4f8c47bba65889fa7671a
-      internalID: -978822586
+      spriteID: a17c22e680b1f5d429fde0a02e6316f6
+      internalID: -217474334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_8
+      name: P2 Bobbing (2)_8
       rect:
         serializedVersion: 2
         x: 0
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16523b6aa858f7345bcb6174ad9575c9
-      internalID: -1395154452
+      spriteID: 3bf66d1348693ea49aec3302d4ab999f
+      internalID: -1978381557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_9
+      name: P2 Bobbing (2)_9
       rect:
         serializedVersion: 2
         x: 32
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00ef9b607d632bf40a1520b56d3b6d60
-      internalID: -1489640167
+      spriteID: 59d80f78cee211c4985fff67a9dd7a52
+      internalID: 1932672010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_10
+      name: P2 Bobbing (2)_10
       rect:
         serializedVersion: 2
         x: 64
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c06e3fb0094e2964ebd77e09cd3af9a5
-      internalID: 360722534
+      spriteID: 5713020efc262484ca7d8c24ca25a11d
+      internalID: -207016402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_11
+      name: P2 Bobbing (2)_11
       rect:
         serializedVersion: 2
         x: 96
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9278c2005ed4ac64b8bd058fd2ce33ac
-      internalID: 1042296402
+      spriteID: 40f4e41a6d063484ab230fabb494816f
+      internalID: -1440841845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P4 Bobbing_12
+      name: P2 Bobbing (2)_12
       rect:
         serializedVersion: 2
         x: 0
@@ -376,8 +376,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05dde584519f83541908468fb216ecfb
-      internalID: 1145823803
+      spriteID: 13f95ad0b346a0443a0ace6d1bd25b1c
+      internalID: 1349771512
       vertices: []
       indices: 
       edges: []
@@ -385,7 +385,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a222adbe4c0af344f9ba0f0f087328e9
     internalID: 0
     vertices: []
     indices: 
@@ -393,19 +393,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      P4 Bobbing_0: -1592639617
-      P4 Bobbing_1: 1529884751
-      P4 Bobbing_10: 360722534
-      P4 Bobbing_11: 1042296402
-      P4 Bobbing_12: 1145823803
-      P4 Bobbing_2: 748949359
-      P4 Bobbing_3: -2063142043
-      P4 Bobbing_4: -937500183
-      P4 Bobbing_5: 1387703179
-      P4 Bobbing_6: 1335645704
-      P4 Bobbing_7: -978822586
-      P4 Bobbing_8: -1395154452
-      P4 Bobbing_9: -1489640167
+      P2 Bobbing (2)_0: -1481645914
+      P2 Bobbing (2)_1: -220937694
+      P2 Bobbing (2)_10: -207016402
+      P2 Bobbing (2)_11: -1440841845
+      P2 Bobbing (2)_12: 1349771512
+      P2 Bobbing (2)_2: 1550273926
+      P2 Bobbing (2)_3: 802925922
+      P2 Bobbing (2)_4: 837596851
+      P2 Bobbing (2)_5: -1823658423
+      P2 Bobbing (2)_6: 707271313
+      P2 Bobbing (2)_7: -217474334
+      P2 Bobbing (2)_8: -1978381557
+      P2 Bobbing (2)_9: 1932672010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

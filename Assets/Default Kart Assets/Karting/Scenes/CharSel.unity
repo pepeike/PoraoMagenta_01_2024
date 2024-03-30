@@ -594,7 +594,7 @@ Transform:
   m_GameObject: {fileID: 680250800}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: 1.28, z: 0}
+  m_LocalPosition: {x: 0.23999977, y: 1.28, z: 0}
   m_LocalScale: {x: 3.6788418, y: 3.6788418, z: 3.6788418}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -956,6 +956,7 @@ MonoBehaviour:
   carousel: {fileID: 352670371}
   SceneName: MainScene
   beep: {fileID: 969379605}
+  playerstochoose: 0
 --- !u!4 &969379604
 Transform:
   m_ObjectHideFlags: 0

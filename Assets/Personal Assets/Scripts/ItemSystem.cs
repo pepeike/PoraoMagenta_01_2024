@@ -15,7 +15,7 @@ public class ItemSystem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ItemBox"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             currentitem = Random.Range(0, items.Length);
             GotItem = true;
             itemget.Play();

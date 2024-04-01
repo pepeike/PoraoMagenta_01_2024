@@ -3,17 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class StartButton : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
+public class ControlsButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject numbselimage;
+    
     public Animator anim;
     public GameObject triang;
-
-    public void ClickedStart()
-    {
-        
-        numbselimage.SetActive(true);
-    }
 
     public void OnPointerEnter(PointerEventData pointer)
     {

@@ -11,7 +11,13 @@ public class CarSelector : MonoBehaviour
     public GameObject carousel;
     public string SceneName;
     public AudioSource beep;
-    // Start is called before the first frame update
+    public static int playerstochoose;
+
+    private void Start()
+    {
+        Debug.Log(playerstochoose);
+    }
+
     public void Update()
     {
         //move the carousel to the selected car

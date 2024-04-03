@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CarSelector : MonoBehaviour
-{
+public class CarSelector : MonoBehaviour {
     public GameObject[] carList;
     public int selectedCar = 0;
     public static GameObject currentCar;
@@ -12,60 +10,70 @@ public class CarSelector : MonoBehaviour
     public string SceneName;
     public AudioSource beep;
     public static int playerstochoose;
+    private int playerIndex = 1;
 
-    private void Start()
-    {
+    public static List<PlayerClass> players = new List<PlayerClass>();
+
+    private void Start() {
         Debug.Log(playerstochoose);
+        //Debug.Log(players);
     }
 
-    public void Update()
-    {
+    public void Update() {
         //move the carousel to the selected car
         carousel.transform.position = Vector3.Lerp(carousel.transform.position,
-           new Vector3(selectedCar * 10, 0, 0), Time.deltaTime*10);
+           new Vector3(selectedCar * 10, 0, 0), Time.deltaTime * 10);
 
         //check if the player presses the right or left arrow
-        if(Input.GetKeyDown(KeyCode.RightArrow))
-        {
+        if (Input.GetKeyDown(KeyCode.RightArrow)) {
             LeftButton();
         }
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
-        {
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
             RightButton();
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            SelectCar();
         }
     }
     //get the right event button
-    public void RightButton()
-    {
+    public void RightButton() {
         beep.Play();
         //get the current car
         currentCar = carList[selectedCar];
         //move the carousel to the right
         selectedCar++;
         //if the selected car is greater than the length of the list, set it to 0
-        if(selectedCar > carList.Length - 1)
-        {
+        if (selectedCar > carList.Length - 1) {
             selectedCar = 0;
         }
-        
+
     }
-    public void LeftButton()
-    {
+    public void LeftButton() {
         beep.Play();
-        currentCar = carList[selectedCar];  
+        currentCar = carList[selectedCar];
         selectedCar--;
-        if(selectedCar < 0)
-        {
+        if (selectedCar < 0) {
             selectedCar = carList.Length - 1;
         }
-       
+
     }
     //select the car
-    public void SelectCar()
-    {
+    public void SelectCar() {
         //set the current car to the selected car
-        currentCar = carList[selectedCar];
+        //currentCar = carList[selectedCar];
+        if (playerIndex <= playerstochoose) {
+
+            //PlayerClass = new PlayerClass(i, selectedCar);
+            players.Add(new PlayerClass(playerIndex, selectedCar));
+            Debug.Log(players[playerIndex - 1].playerCar);
+            playerIndex++;
+            if (playerIndex > playerstochoose) {
+                Debug.Log("Finished");
+            }
+        }
         //load the scene
-        SceneManager.LoadSceneAsync(SceneName);
+        
+        //Debug.Log("Finished");
+        //SceneManager.LoadSceneAsync(SceneName);
     }
 }

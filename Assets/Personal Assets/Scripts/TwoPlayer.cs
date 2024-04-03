@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class TwoPlayer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,IPointerClickHandler 
 {
@@ -25,6 +26,7 @@ public class TwoPlayer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void OnPointerClick(PointerEventData pointeventdata)
     {
         CarSelector.playerstochoose = 2;
+        SceneManager.LoadScene("CharSel");
     }
 }
     

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class StartButton : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
@@ -8,6 +9,8 @@ public class StartButton : MonoBehaviour,IPointerEnterHandler, IPointerExitHandl
     public GameObject numbselimage;
     public Animator anim;
     public GameObject triang;
+
+    public Button button;
 
     public void ClickedStart()
     {
@@ -20,6 +23,8 @@ public class StartButton : MonoBehaviour,IPointerEnterHandler, IPointerExitHandl
         anim.SetBool("IsHighlighted", true);
         triang.gameObject.SetActive(true);
     }
+
+    
 
     public void OnPointerExit(PointerEventData pointer)
     {

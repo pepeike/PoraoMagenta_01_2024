@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
+//[RequireComponent(typeof(CharacterController))]
 public class CarSelector : MonoBehaviour {
     public GameObject[] carList;
     public int selectedCar = 0;
@@ -9,14 +11,26 @@ public class CarSelector : MonoBehaviour {
     public GameObject carousel;
     public string SceneName;
     public AudioSource beep;
+    
     public static int playerstochoose;
     private int playerIndex = 1;
-
     public static List<PlayerClass> players = new List<PlayerClass>();
+    private Vector2 movementInput = Vector2.zero;
+    //private CharacterController characterController;
+
+    //[SerializeField]
+    //private PlayerInputManager playerInputManager;
+    
+    
 
     private void Start() {
         Debug.Log(playerstochoose);
+        
+        
+
         //Debug.Log(players);
+        //characterController = GetComponent<CharacterController>();
+
     }
 
     public void Update() {
@@ -25,18 +39,19 @@ public class CarSelector : MonoBehaviour {
            new Vector3(selectedCar * 10, 0, 0), Time.deltaTime * 10);
 
         //check if the player presses the right or left arrow
-        if (Input.GetKeyDown(KeyCode.RightArrow)) {
-            LeftButton();
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
-            RightButton();
-        }
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            SelectCar();
-        }
+        //if (Input.GetKeyDown(KeyCode.RightArrow)) {
+        //    LeftButton();
+        //}
+        //if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+        //    RightButton();
+        //}
+        //if (Input.GetKeyDown(KeyCode.Space)) {
+        //    SelectCar();
+        //}
     }
     //get the right event button
     public void RightButton() {
+        beep.pitch = 1;
         beep.Play();
         //get the current car
         currentCar = carList[selectedCar];
@@ -49,6 +64,7 @@ public class CarSelector : MonoBehaviour {
 
     }
     public void LeftButton() {
+        beep.pitch = 1;
         beep.Play();
         currentCar = carList[selectedCar];
         selectedCar--;
@@ -61,6 +77,8 @@ public class CarSelector : MonoBehaviour {
     public void SelectCar() {
         //set the current car to the selected car
         //currentCar = carList[selectedCar];
+        beep.pitch = 1.4f;
+        beep.Play();
         if (playerIndex <= playerstochoose) {
 
             //PlayerClass = new PlayerClass(i, selectedCar);
@@ -76,4 +94,31 @@ public class CarSelector : MonoBehaviour {
         //Debug.Log("Finished");
         //SceneManager.LoadSceneAsync(SceneName);
     }
+
+    public void OnMove(InputAction.CallbackContext context) {
+        movementInput = context.ReadValue<Vector2>();
+        Debug.Log("Movement Input: " +  movementInput);
+        if (movementInput.x > 0 && context.phase == InputActionPhase.Started) {
+            LeftButton();
+            Debug.Log(context.action.phase);
+        } else if (movementInput.x < 0 && context.phase == InputActionPhase.Started) {
+            RightButton();
+            Debug.Log(context.action.phase);
+        }
+    }
+
+    public void OnSelect(InputAction.CallbackContext context) {
+        
+        if (context.phase == InputActionPhase.Started) {
+            SelectCar();
+        }
+    }
+
+    public void OnEscape(InputAction.CallbackContext context) {
+        
+        if (context.phase == InputActionPhase.Started) {
+            Debug.Log("Escape");
+        }
+    }
+
 }

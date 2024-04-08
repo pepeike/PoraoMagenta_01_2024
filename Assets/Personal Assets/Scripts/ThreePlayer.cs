@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class ThreePlayer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -28,5 +29,6 @@ public class ThreePlayer : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnPointerClick(PointerEventData pointeventdata)
     {
         CarSelector.playerstochoose = 3;
+        SceneManager.LoadScene("CharSel");
     }
 }

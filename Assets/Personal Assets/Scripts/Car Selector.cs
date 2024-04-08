@@ -87,6 +87,7 @@ public class CarSelector : MonoBehaviour {
             playerIndex++;
             if (playerIndex > playerstochoose) {
                 Debug.Log("Finished");
+                SceneManager.LoadSceneAsync(SceneName);
             }
         }
         //load the scene
@@ -118,6 +119,7 @@ public class CarSelector : MonoBehaviour {
         
         if (context.phase == InputActionPhase.Started) {
             Debug.Log("Escape");
+            SceneManager.LoadSceneAsync(0);
         }
     }
 

@@ -12,10 +12,12 @@ public class CarController : MonoBehaviour {
     private WheelCollider rearLeft;
     private PlayerInput playerInput;
 
+    private Rigidbody rb;
+
     #region Car Attributes
 
-    [SerializeField]
-    private float motorForce;
+    
+    public float motorForce;
     [SerializeField]
     private float brakeForce;
     [SerializeField]
@@ -27,7 +29,7 @@ public class CarController : MonoBehaviour {
 
     private void Awake() {
         playerInput = GetComponent<PlayerInput>();
-
+        rb = GetComponent<Rigidbody>();
         IngameActions inputActions = new IngameActions();
         inputActions.Car.Enable();
         //inputActions.UI.Enable();
@@ -36,7 +38,7 @@ public class CarController : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        Debug.Log(rearLeft.rpm);
+        Debug.Log(rb.velocity);
     }
 
     public void Drive(InputAction.CallbackContext context) {

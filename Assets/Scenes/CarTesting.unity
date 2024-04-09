@@ -1093,7 +1093,8 @@ PrefabInstance:
       propertyPath: m_SuspensionSpring.targetPosition
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 475592687244062928, guid: 5110aa87517f27c4fb820864700d3979, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3600354310076191366, guid: 5110aa87517f27c4fb820864700d3979,

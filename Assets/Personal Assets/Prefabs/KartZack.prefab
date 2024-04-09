@@ -727,10 +727,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4895846115232909980, guid: cba6236a3ca88a54081cc989c4f0c08a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 475592687244062928}
-    - targetCorrespondingSourceObject: {fileID: 4895846115232909980, guid: cba6236a3ca88a54081cc989c4f0c08a,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1520980276296197660}
     - targetCorrespondingSourceObject: {fileID: 4895846115232909980, guid: cba6236a3ca88a54081cc989c4f0c08a,
         type: 3}
@@ -751,19 +747,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8216409813266749469}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &475592687244062928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3600354310076191361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8534e17a0f90604c9afd4f5c73d829f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Id: cb889db8-3ced-48dd-a5ae-060debd404b8
 --- !u!65 &1520980276296197660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -801,6 +784,9 @@ MonoBehaviour:
   frontLeft: {fileID: 3603119951086704558}
   rearRight: {fileID: 2177315177988199986}
   rearLeft: {fileID: 7494187533866875171}
+  motorForce: 0
+  brakeForce: 0
+  maxSteerAngle: 0
 --- !u!114 &1654700518381493576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,7 +812,31 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f6ea53f8-ceb3-4baf-bab4-f9d9b551690f
+    m_ActionName: Car/Drive[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1bf7a5a7-d99e-4999-a44b-82f8b7a5c72c
+    m_ActionName: Car/Steer[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 64e63abe-e6a4-4117-96a4-0b77ccce7e75
+    m_ActionName: Car/Back[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 49608138-6ddb-47a3-b5d8-5b45372e44e6
+    m_ActionName: Car/Brake[/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c909178a-e6f1-4295-9629-21eb74995028
+    m_ActionName: Car/Item[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca79b8c3-f023-4324-bce0-1b929d028733
+    m_ActionName: UI/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Car

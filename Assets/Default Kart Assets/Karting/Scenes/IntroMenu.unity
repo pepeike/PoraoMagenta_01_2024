@@ -664,6 +664,7 @@ MonoBehaviour:
   numbselimage: {fileID: 325872970}
   anim: {fileID: 129299361}
   triang: {fileID: 1145165528}
+  button: {fileID: 0}
 --- !u!95 &129299361
 Animator:
   serializedVersion: 5
@@ -4358,7 +4359,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833309139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4367,8 +4368,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 27, y: 32.367004}
+  m_SizeDelta: {x: 115.084, y: 64.735}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833309141
 MonoBehaviour:
@@ -4390,7 +4391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: d8f03602f0fafe74ab6bec4f0e6624ca, type: 3}
+  m_Texture: {fileID: 2800000, guid: 19b8c2e7b1516c64e9267a32021e32cc, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0

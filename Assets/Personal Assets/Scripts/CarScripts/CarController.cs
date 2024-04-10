@@ -32,6 +32,8 @@ public class CarController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         IngameActions inputActions = new IngameActions();
         inputActions.Car.Enable();
+
+        
         //inputActions.UI.Enable();
 
 

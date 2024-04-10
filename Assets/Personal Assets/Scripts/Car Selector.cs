@@ -20,7 +20,8 @@ public class CarSelector : MonoBehaviour {
 
     //[SerializeField]
     //private PlayerInputManager playerInputManager;
-    
+
+    //public List<GameObject> playerBases;
     
 
     private void Start() {
